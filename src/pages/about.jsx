@@ -1,19 +1,22 @@
-import { AboutTable } from "@/components/about/table" // Nomini AboutTable qildik
+// src/pages/about.jsx
+
+import { DataTable } from "@/components/about/data-table"
+import { columns } from "@/components/about/columns"
 
 export const AboutPage = () => {
-  // Test uchun namunaviy ma'lumotlar (Buni API'dan olishingiz ham mumkin)
-  const aboutData = [
-    { status: "Success", email: "test@example.com", amount: "$100" },
-    { status: "Pending", email: "user@mail.com", amount: "$50" },
-  ];
+ const data = [
+  { status: "success", email: "test@example.com", amount: "$100" },
+  { status: "pending", email: "user@mail.com", amount: "$50" },
+  { status: "failed", email: "fail@mail.com", amount: "$200" },
+  { status: "processing", email: "proc@mail.com", amount: "$75" },
+]
 
   return (
     <div className="p-4">
       <h1 className="text-2xl font-bold mb-4">About Page</h1>
-      <p>This is the content of the about page.</p>
+      <p className="mb-4">This is the content of the about page.</p>
       
-      {/* Jadvalga ma'lumotni 'data' sifatida uzatamiz */}
-      <AboutTable data={aboutData} /> 
+      <DataTable columns={columns} data={data} />
     </div>
   )
 }
