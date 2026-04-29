@@ -45,37 +45,41 @@ const data = {
       plan: "Free",
     },
   ],
-
-// ... 48-qatorda navMain boshlanadi
-navMain: [
-  {
-    title: "Playground",
-    url: "#",
-    icon: (
-      <TerminalSquareIcon />
-    ),
-    isActive: true,
-    items: [
-      {
-        title: "Home",
-        url: "/",
-      },
-      {
-        title: "Users",
-        url: "/users",
-      },
-      {
-        title: "About", // SHU YERGA QO'SHING
-        url: "/about",
-      },
-      {
-        title: "Settings",
-        url: "#",
-      },
-    ],
-  },
-  // ... qolgan kodlar
-
+  navMain: [
+    {
+      title: "Playground",
+      url: "#",
+      icon: (
+        <TerminalSquareIcon />
+      ),
+      isActive: true,
+      items: [
+        {
+          title: "Home",
+          url: "/",
+        },
+        {
+          title: "Users",
+          url: "/users",
+        },
+        {
+          title: "About",
+          url: "/about",
+        },
+        {
+          title: "Settings",
+          url: "/some/settings",
+        },
+        {
+          title: "Zod",
+          url: "/some/zod",
+        },
+        {
+          title: "Zod2",
+          url: "/zod2",
+        },
+      ],
+    },
     {
       title: "Models",
       url: "#",
